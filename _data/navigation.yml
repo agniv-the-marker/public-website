@@ -1,0 +1,10 @@
+# main links
+main:
+  - title: "home"
+    url: /
+  - title: "blog"
+    url: /blog
+  - title: "poetry"
+    url: /poetry
+  - title: "photos"
+    url: /photographs

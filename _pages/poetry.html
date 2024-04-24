@@ -1,0 +1,10 @@
+---
+layout: page
+title: "Poetry: a collection"
+permalink: /poetry/
+subtitle: Mostly drafts.
+---
+
+{% for post in site.poetry reversed %}
+  {% include post-entry.html %}
+{% endfor %}

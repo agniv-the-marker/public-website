@@ -1,0 +1,35 @@
+---
+layout: page
+title: Tags
+subtitle: Index page for the tags (sorted alphabetically)
+---
+
+{% capture temptags %}x``
+    {% assign unique_tags = '' | split: ',' %}
+    {% assign all_files = site.posts | concat: site.poetry | concat: site.projects %}
+    {% for file in all_files %}
+      {% for tag in file.tags %}
+        {% unless unique_tags contains tag %}
+          {% assign unique_tags = unique_tags | push: tag %}
+        {% endunless %}
+      {% endfor %}
+    {% endfor %}
+    {% for tag in unique_tags %}
+      {{ tag }}
+    {% endfor %}
+  {% endcapture %}
+  {% assign sortedtemptags = temptags | split:' ' | sort %}
+
+  {% for temptag in sortedtemptags %}
+  {% assign tagged_posts = all_files | where_exp: "item", "item.tags contains temptag" | sort: "date" %}
+  {% if tagged_posts.size > 0 %}
+      <h2><a href="{{ site.url }}/tag/{{ temptag }}">{{ temptag }}</a></h2>
+      <p style="color:gray;font-size:smaller">{{ tagged_posts.size }} item{% if tagged_posts.size != 1 %}s{% endif %}</p>
+      <ul>
+          {% for post in tagged_posts %}
+              {% include post-entry.html %}
+              <!-- <li><a href="{{ post.url }}">{{ post.title }}</a></li> -->
+          {% endfor %}
+      </ul>
+  {% endif %}
+{% endfor %}

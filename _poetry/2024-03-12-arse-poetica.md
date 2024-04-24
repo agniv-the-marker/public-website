@@ -1,0 +1,8 @@
+---
+title: Arse Poeticas
+tags: free-verse poetry
+---
+
+| Arse Poetica (First Draft)      | Arse Poetica (Revision) |
+| ------------------------------- | ----------------------- |
+| <br>When writing a poem about poems<br>The author seems to go to Mars<br>And then lose themselves, up in the stars<br><br>We tend to disconnect from emotion<br>But tears and laughs and all that burns<br>That is what makes a poem churn<br><br>And when the author feels they need to say<br>The reader, on their own, you there,<br>You must think us Narcissus, and this, our pond.<br><br>Constantly going over the rote technique<br>You may find it uncreative; is it?<br>Hopefully we make you think a bit discrete<br><br>So when you see an arse poetica,<br>Draw up your sleeves, man your pencils<br>Scribble on the page with meaning, <br>for we do not offer it here. | <br>To revise your own poem about poems<br>One must rein yourself in from Pluto,<br>Back up on solid earth, to let the star grow.<br><br>Its annoying disconnect from raw emotion<br>Causes me some burn through a tear and a laugh<br>But my poem is an emotional graft, making me learn.<br><br>So when the poet commits, I must too.<br>Me, a reviser, with my own self, the past,<br>Perhaps I am the Echo, and this, my Narcissus.<br><br>Immediately befallen in love with this new idea,<br>But cursed by Juno to only be able to repeat myself,<br>Stuck watching thyself, murmuring out “come together.”<br><br>Though immortal, this poem is lost,<br>Hidden in a forest within the stars,<br>Until all that remains is the sound of its own voice.<br><br>So when I repeat my arse poetica,<br>I draw up my sleeves, ready my worn hands<br>Shift my tones to find meaning,<br>for we do not offer it here.<br> |

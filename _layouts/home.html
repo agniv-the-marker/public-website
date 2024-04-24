@@ -1,0 +1,27 @@
+---
+layout: page
+---
+
+<h2 class="page__title">who?</h2>
+
+{{ content }}
+
+<hr>
+
+<h2 class="page__title"><a href="{{ site.url }}/blog">recent posts</a></h2>
+
+{% for post in site.posts limit:5 %}
+  {% include post-entry.html %}
+{% endfor %}
+
+<hr>
+
+<h2 class="page__title"><a href="{{ site.url }}/poetry">recent poems</a></h2>
+
+{% for post in site.poetry limit:5 %}
+  {% include post-entry.html %}
+{% endfor %}
+
+<hr>
+
+{% include archive.html %}

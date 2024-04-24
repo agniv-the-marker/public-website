@@ -1,0 +1,21 @@
+<div class="page">
+  <h2><a href="{{ site.url }}/tag">Archive</a></h2>
+  {% capture temptags %}
+    {% assign unique_tags = '' | split: ',' %}
+    {% assign all_files = site.posts | concat: site.poetry | concat: site.projects %}
+    {% for file in all_files %}
+      {% for tag in file.tags %}
+        {% unless unique_tags contains tag %}
+          {% assign unique_tags = unique_tags | push: tag %}
+        {% endunless %}
+      {% endfor %}
+    {% endfor %}
+    {% for tag in unique_tags %}
+      {{ tag }}
+    {% endfor %}
+  {% endcapture %}
+  {% assign sortedtemptags = temptags | split:' ' | sort %}
+  {% for temptag in sortedtemptags %}
+    <a href="/tag/{{ temptag }}"><code class="highlighter-rouge"><nobr>{{ temptag }}</nobr></code></a>
+  {% endfor %}
+</div>

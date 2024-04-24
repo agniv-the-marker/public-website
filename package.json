@@ -1,0 +1,10 @@
+{
+  "dependencies": {
+    "gulp": "^5.0.0"
+  },
+  "devDependencies": {
+    "crypto-js": "^4.2.0",
+    "gulp-util": "^3.0.8",
+    "marked": "^12.0.1"
+  }
+}

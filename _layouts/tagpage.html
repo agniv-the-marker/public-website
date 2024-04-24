@@ -1,0 +1,39 @@
+---
+layout: page
+---
+  
+    <div class="page">
+        <ul>
+            {% for post in site.posts %}
+                {% assign post_tags = post.tags | join:',' %}
+                {% if post_tags contains page.tag %}
+                    <li>
+                        <a href="{{ post.url }}">{{ post.title }}</a> ({{ post.date | date_to_string }}, Post)<br>
+                        {{ post.description }}
+                    </li>
+                {% endif %}
+            {% endfor %}
+            
+            {% for post in site.poetry %}
+                {% assign post_tags = post.tags | join:',' %}
+                {% if post_tags contains page.tag %}
+                    <li>
+                        <a href="{{ post.url }}">{{ post.title }}</a> ({{ post.date | date_to_string }}, Poem)<br>
+                        {{ post.description }}
+                    </li>
+                {% endif %}
+            {% endfor %}
+            
+            {% for post in site.projects %}
+                {% assign post_tags = post.tags | join:',' %}
+                {% if post_tags contains page.tag %}
+                    <li>
+                        <a href="{{ post.url }}">{{ post.title }}</a> ({{ post.date | date_to_string }}, Project)<br>
+                        {{ post.description }}
+                    </li>
+                {% endif %}
+            {% endfor %}
+        </ul>
+    </div>
+    <hr>
+    {% include archive.html %}
